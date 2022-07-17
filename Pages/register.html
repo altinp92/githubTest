@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeriren</title>
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+
+
+        .body {
+            width: 1500px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+        input {
+            color: rgb(170, 53, 10);
+        }
+
+
+
+
+        a {
+            margin: 10px;
+            text-size-adjust: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header {
+            background-size: 100% 100%;
+            text-align: center;
+            margin: top 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-color: rgb(196, 57, 36);
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        td {
+            padding: 10px;
+
+            border-collapse: collapse;
+        }
+
+
+
+        .footer-table {
+            height: 50px;
+            width: 1500px;
+        }
+
+        .main {
+            height: 700px;
+        }
+
+        .fieldset {
+            margin-top: 30px;
+            color: rgb(199, 71, 24);
+            border-radius: 25px;
+        }
+
+        .fieldset-legend {
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div>
+        <table style="width: 1500px;">
+            <tr>
+                <td>
+                    
+    <i>
+        <h1 style="color: rgb(196,57,36) ;"> Ketabkhan</h1>
+    </i
+
+                </td>
+                <td>
+                    <div style="padding: 7px; margin-left: 20px; text-align: right;">
+                        <form action="../Pages/server.html" method="post">
+                            <label for="suche">Suchbegriff: </label>
+                            <input type="search" id="suche" name="search">
+                            <input / type="submit" value="suchen">
+            
+            
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <header class="topnav header">
+
+        <a href="../Pages/index.html">Startseite</a>
+        <a href="../Pages/register.html">Registrieren</a>
+        <a href="../Pages/kontakt.html">Kontakt</a>
+        <a href="../Pages/about.html">Über uns</a>
+        <a href="../Pages/bibliothek.html">Bibliothek</a>
+        <a href="../Pages/faq.html">Q&A</a>
+        <a href="../Pages/book-reviews.html">Buch Rezension</a>
+        <a href="../Pages/the-book-team.html">Buchteam</a>
+        <a href="../Pages/Groups.html">Gruppen</a>
+        <a href="../Pages/press.html">News</a>
+
+    </header>
+    <main class="main">
+
+        <fieldset class="fieldset">
+            <legend class="fieldset-legend"> Registeriren</legend>
+            <form action="server.html" enctype="multipart/form-data" method="post">
+
+                <table>
+
+                    <tr>
+                        <td> <label for="Nname">Nachname: </label>
+                        <td><input / type="text" id="vname" name="F" required><br /></td>
+
+                        <td><label for="Vname">Vorname: </label></td>
+                        <td> <input / type="text" id="Nname" name="N" required autocomplete="off"><br /></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <label for="ag">Alter: </label>
+                        <td><input / type="number" id="age" name="ag" required min="8" max="99"><br /></td>
+
+                    </tr>
+
+
+                    <tr>
+
+
+                        <td><label for="userName"> Benutzername: </label></td>
+                        <td> <input / type="text" id="userName" name="uN" required><br /></td>
+
+                        <td> <label for="pword">Password: </label> </td>
+                        <td><input / type="password" id="pword" name="p"><br /></td>
+
+                    </tr>
+
+
+
+
+
+
+                    <tr>
+
+                        <td><label for="Mail">Email: </label></td>
+                        <td><input / type="Email" id="Mail" name="M"><br /></td>
+
+
+                        <td> <label for="birthDay">Geburtsdatum:</label>
+                        <td><input / type="date" id="birthDay" name="bD"><br /></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="">Geschlecht:</label>
+                        <td><input / type="radio" id="G" name="gender" value="male" checked>Männlich
+                            <input / type="radio" id="G" name="gender" value="female">Weiblich
+                            <input / type="radio" id="G" name="gender" value="divers">Divers
+                        </td>
+
+                        <td> <label for="">Familienstand:</label>
+                        <td><input / type="radio" id="G" name="marital" value="true" checked> Ledig
+                            <input / type="radio" id="G" name="marital" value="false"> Verheiratet
+
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td> <label for="">Lieblingbuch-Genre:</label>
+                        <td><input / type="checkbox" id="krimi" name="krimi">Krimi
+                            <input / type="checkbox" id="fantasi" name="fantasi">Fantasi
+                            <input / type="checkbox" id="sf" name="sf">Science-Fiction
+                            <input / type="checkbox" id="lr" name="lr">Liebesromane
+                            <input / type="checkbox" id="fr" name="fr">Familienroman <br />
+                            <input / type="checkbox" id="rr" name="rr">Reiseroman
+                            <input / type="checkbox" id="hr" name="hr">Historischer Roman
+                            <input / type="checkbox" id="gr" name="gr">Gruselroman
+                            <input / type="checkbox" id="sb" name="sb">Sachbücher
+                            <input / type="checkbox" id="fb" name="fb">Fremdsprachige Bücher
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td> <label for="state">Bundesland:</label>
+                        <td><select name="state">
+                                <option value="0" selected>Bitte wählen Sie Ihr Bundesland</option>
+                                <option value="1">Berlin</option>
+                                <option value="2">Bayern (Bavaria)</option>
+                                <option value="3">Niedersachsen (Lower Saxony)</option>
+                                <option value="4">Baden-Württemberg</option>
+                                <option value="5">Rheinland-Pfalz (Rhineland-Palatinate)</option>
+                                <option value="6">Sachsen (Saxony)</option>
+                                <option value="7">Thüringen (Thuringia)</option>
+                                <option value="8">Hessen</option>
+                                <option value="9">Nordrhein-Westfalen (North Rhine-Westphalia)</option>
+                                <option value="10">Sachsen-Anhalt (Saxony-Anhalt)</option>
+                                <option value="11">Brandenburg</option>
+                                <option value="12">Mecklenburg-Vorpommern</option>
+                                <option value="13">Hamburg</option>
+                                <option value="14">Schleswig-Holstein</option>
+                                <option value="15">Saarland</option>
+                                <option value="16">Bremen</option>
+                            </select></td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td> Adress: </td>
+                        <td><textarea rows="3" cols="15" id="adress" name="af"></textarea> <br /></td>
+                        <td>Telefonnammer: </td>
+                        <td><input / type="tel" id="phone" name="ph"><br /></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <label for="myFile">Profilbild Hochladen:</label>
+                        <td><input / type="file" id="myFile" name="myF" accept="image/*"><br /></td>
+
+
+                    </tr>
+
+                </table>
+
+
+
+
+
+
+                <input / type="submit" value="Registrieren" style="padding: 7px; margin-left: 20px;">
+                <input / type="reset" value="Reset" style="padding: 7px; margin-left: 7px">
+            </form>
+
+        </fieldset>
+    </main>
+    <footer>
+        <hr>
+        <table class="footer-table">
+            <tr>
+                <td style="width: 40%; padding: ;"> Wir lesen die weltbesten Bücher in verschiedenen Bereichen und
+                    sprechen jede Woche über diese Bücher.
+                </td>
+
+                <td align="center" style="width: 20%;"><img src="../img/logo3.jpg" alt="Logo">
+                </td>
+
+                <td align="right" style="width: 40%;">
+                    <a href="../Pages/kontakt.html" style="color: black;">Kontakt</a>
+                    <a href="../Pages/about.html" style="color: black;" >Über uns</a>
+                    <p style="font-size:  10px; ">Copyright 2022 alle rechte vorbehalten Ketabkhan</p>
+                </td>
+
+            </tr>
+
+
+
+        </table>
+
+    </footer>
+
+
+</body>
+
+</html>
